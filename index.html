@@ -14,11 +14,91 @@
 
 <body>
 
+    <div class="container">
+        <!--Title row-->
+        <div class="row">
+            <div class="col-md-10 text-center offset-1">
+                <div class="jumbotron jumbotron-fluid border rounded">
+                    <div class="container">
+                        <h1 class="display-4">Choo-Choo Train Scheduler</h1>
+                        <h3>Chugga Chugga Motherfucker</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Table row-->
+        <div class="row">
+            <div class="col-md-10 offset-1">
+                <div class="card">
+                    <h5 class="card-header">Train Schedule</h5>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency (min)</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="name-display" scope="row"></th>
+                                    <td class="dest-display"></td>
+                                    <td class="freq-display"></td>
+                                    <td class="next-arr-display"></td>
+                                    <td class="min-away-display"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Input form row-->
+        <div class="row mt-5">
+            <div class="col-md-10 offset-1">
+                <div class="card">
+                    <h5 class="card-header">Add Train</h5>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Train Name</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Destination</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">First Train Time (HH:mm - military time)</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Frequency (min)</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+
+                            <!--Submit Button-->
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
     <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>
     <script src="assets/javascript/app.js"></script>
 </body>
 
