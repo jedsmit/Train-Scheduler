@@ -32,7 +32,7 @@
                 <div class="card">
                     <h5 class="card-header">Train Schedule</h5>
                     <div class="card-body">
-                        <table class="table">
+                        <table id="train-table" class="table">
                             <thead>
                                 <tr>
                                     <th scope="col">Train Name</th>
@@ -44,11 +44,11 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th class="name-display" scope="row"></th>
+                                    <!--<th class="name-display" scope="row"></th>
                                     <td class="dest-display"></td>
                                     <td class="freq-display"></td>
                                     <td class="next-arr-display"></td>
-                                    <td class="min-away-display"></td>
+                                    <td class="min-away-display"></td>-->
                                 </tr>
                             </tbody>
                         </table>
@@ -63,29 +63,32 @@
                     <h5 class="card-header">Add Train</h5>
                     <div class="card-body">
                         <form>
+                            <!--Train name input-->
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Train Name</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <label>Train Name</label>
+                                <input type="text" class="form-control" id="train-name-input"
+                                    placeholder="Enter train name">
                             </div>
+                            <!--Destination input-->
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Destination</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Password">
+                                <input type="text" class="form-control" id="destination-input"
+                                    placeholder="Enter destination">
                             </div>
+                            <!--First time input-->
                             <div class="form-group">
                                 <label for="exampleInputEmail1">First Train Time (HH:mm - military time)</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <input type="text" class="form-control" id="first-time-input"
+                                    placeholder="Enter first train time (mil)">
                             </div>
+                            <!--Frequency input-->
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Frequency (min)</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Password">
+                                <input type="text" class="form-control" id="freq-input" placeholder="Enter frequency">
                             </div>
 
                             <!--Submit Button-->
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
                         </form>
 
                     </div>
@@ -99,6 +102,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js">    </script>
     <script src="assets/javascript/app.js"></script>
 </body>
 
