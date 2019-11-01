@@ -77,9 +77,9 @@ database.ref().on("child_added", function (childSnapshot) {
     var newRow = $("<tr>").append(
         $("<td>").text(snapName),
         $("<td>").text(snapDestination),
-        $("<td>").text(snapFrequency),
-        $("<td>").text(trainArrival),
-        $("<td>").text(minAway)
+        $("<td>").addClass("text-center").text(snapFrequency),
+        $("<td>").addClass("text-center").text(trainArrival),
+        $("<td>").addClass("text-center").text(minAway)
     );
 
     // Append the new row to the table

@@ -12,24 +12,24 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-attachment: fixed; background-image: url(assets/train-clock.jpg);">
 
-    <div class="container">
+    <div class="container font-weight-bold">
         <!--Title row-->
         <div class="row">
             <div class="col-md-10 text-center offset-1">
-                <div class="jumbotron jumbotron-fluid border rounded">
+                <div class="jumbotron jumbotron-fluid mt-3 mb-3  border rounded" style="opacity: .9;">
                     <div class="container">
                         <h1 class="display-4">Choo-Choo Train Scheduler</h1>
-                        <h3>Chugga Chugga Motherfucker</h3>
+                        <h3>Chugga Chugga</h3>
                     </div>
                 </div>
             </div>
         </div>
         <!--Table row-->
-        <div class="row">
+        <div class="row mb-3">
             <div class="col-md-10 offset-1">
-                <div class="card">
+                <div class="card" style="opacity: .9;">
                     <h5 class="card-header">Train Schedule</h5>
                     <div class="card-body">
                         <table id="train-table" class="table">
@@ -37,18 +37,15 @@
                                 <tr>
                                     <th scope="col">Train Name</th>
                                     <th scope="col">Destination</th>
-                                    <th scope="col">Frequency (min)</th>
-                                    <th scope="col">Next Arrival</th>
-                                    <th scope="col">Minutes Away</th>
+                                    <th scope="col" class="text-center">Frequency (min)</th>
+                                    <th scope="col" class="text-center">Next Arrival</th>
+                                    <th scope="col" class="text-center">Minutes Away</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <!--<th class="name-display" scope="row"></th>
-                                    <td class="dest-display"></td>
-                                    <td class="freq-display"></td>
-                                    <td class="next-arr-display"></td>
-                                    <td class="min-away-display"></td>-->
+                                    <!--Data populates here-->
+
                                 </tr>
                             </tbody>
                         </table>
@@ -57,9 +54,9 @@
             </div>
         </div>
         <!--Input form row-->
-        <div class="row mt-5">
+        <div class="row">
             <div class="col-md-10 offset-1">
-                <div class="card">
+                <div class="card" style="opacity: .9;">
                     <h5 class="card-header">Add Train</h5>
                     <div class="card-body">
                         <form>
@@ -79,7 +76,7 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1">First Train Time (HH:mm - military time)</label>
                                 <input type="text" class="form-control" id="first-time-input"
-                                    placeholder="Enter first train time (mil)">
+                                    placeholder="Enter first train time (military time)">
                             </div>
                             <!--Frequency input-->
                             <div class="form-group">
@@ -88,7 +85,7 @@
                             </div>
 
                             <!--Submit Button-->
-                            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                            <button id="submit" type="submit" class="btn btn-secondary">Submit</button>
                         </form>
 
                     </div>
